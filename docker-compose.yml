@@ -1,0 +1,8 @@
+subnets:
+    build: .
+    restart: always
+    environment:
+     - VIRTUAL_HOST=
+     - LETSENCRYPT_HOST=
+    expose:
+     - "80"
